@@ -1,17 +1,15 @@
 package hello;
 
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.junit.Assert.*;
-
+import static org.junit.Assert.*;  
 import org.junit.Test;
+import hello.Greeter;
 
 public class GreeterTest {
 
-	private Greeter greeter = new Greeter();
-
-	@Test
-	public void greeterSaysHello() {
-		assertThat(greeter.sayHello(), containsString("Hello"));
-	}
+	   @Test  
+    public void testFindMax(){  
+        assertEquals(4,Greeter.findMax(new int[]{1,3,4,2}));  
+        assertEquals(-1,Greeter.findMax(new int[]{-12,-1,-3,-4,-2}));  
+    }  
 
 }
