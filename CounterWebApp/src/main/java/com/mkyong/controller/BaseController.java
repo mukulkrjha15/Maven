@@ -33,6 +33,7 @@ public class BaseController {
 		model.addAttribute("counter", ++counter);
 		logger.debug("[welcomeName] counter : {}", counter);
 		return VIEW_INDEX;
+		System.out.println("Welcome2017");
 
 	}
 
